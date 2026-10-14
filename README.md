@@ -125,11 +125,23 @@ Local test of `armor_test2.mp4`:
 
 The detection count is the sum across frames, not the number of unique armor plates. Some frames had zero detections. Inspect the output video and document any missed detections, false positives, incorrect classes, or inaccurate keypoints observed.
 
-## 9. Representative Result
+## 9. Representative Results
 
-The following screenshot shows a representative frame from the local inference result.
+The following screenshots show representative frames from the final inference results.
 
-![Representative inference result](assets/result_sample.png)
+### Result from video_1.mp4
+
+![Inference result 1](assets/result_sample1.png)
+
+
+### Result from video_2.mp4
+
+![Inference result 2](assets/result_sample2.png)
+
+
+### Result from video_3.mp4
+
+![Inference result 3](assets/result_sample3.png)
 
 ## 10. Notes
 
