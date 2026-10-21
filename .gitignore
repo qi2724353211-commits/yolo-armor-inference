@@ -6,11 +6,6 @@ __pycache__/
 venv/
 env/
 
-# Model weights
-*.pt
-*.pth
-*.onnx
-
 # Input and output videos
 videos/
 outputs/
