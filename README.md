@@ -94,7 +94,7 @@ python .\shape_test.py
 两种格式使用**相同的测试图片和参数**：
 
 ```powershell
-# 原始 .pt 模型（GPU）
+# 原始 .pt 模型（GPU）,还有要注意的这个test.jgp自己换的话再改一下
 python .\infer_pt.py --source assets\test.jpg --conf 0.25 --iou 0.45 --device 0
 
 # 导出的 .onnx 模型（自动使用 GPU）
