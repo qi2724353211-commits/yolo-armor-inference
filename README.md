@@ -31,11 +31,12 @@ yolo-armor-inference/
 ├── export.py               # 模型导出脚本
 ├── infer_pt.py             # .pt 推理脚本
 ├── infer_onnx.py           # .onnx 推理脚本
+├── compare.py              # 一键对比 .pt/.onnx 并生成 comparison.md
 ├── make_test_image.py      # 从视频抽取干净测试帧
 ├── check.py                # 查看类别/模型信息
 ├── shape_test.py           # 查看 ONNX 输入/输出形状
 ├── test_model.py           # 模型检查脚本
-├── comparison.md           # .pt 与 .onnx 的对比报告
+├── comparison.md           # .pt 与 .onnx 的对比报告（可自动生成）
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
@@ -111,6 +112,12 @@ python .\make_test_image.py --video videos\video_3.mp4 --out assets\test.jpg
 ## 7. 性能对比
 
 详细对比见 [comparison.md](comparison.md)，结论如下：
+
+也可以用 `compare.py` 一键跑两个模型并自动重新生成 `comparison.md`：
+
+```powershell
+python .\compare.py --source assets\test.jpg
+```
 
 | 对比项目 | 原始 `.pt` | 导出 `.onnx` |
 |----------|-----------|-------------|
